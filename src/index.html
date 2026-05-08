@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <form class="search-bar">
+        <label>
+            <input type="text" placeholder="Enter a City" class="input">
+        </label>
+        <button type="submit" class="submit-button">Search</button>
+    </form>
+    <div class="main-view">
+        <div class="details">
+        </div>
+        <div class="tags">
+            <div class="container col-span-2">
+                <h1 class="container-label"> Wind</h1>
+                <div id="speed" class="wind-row">
+                    <h2 class="information">Speed</h2>
+                </div>
+                <div id="gust" class="wind-row">
+                    <h2 class="information">Gust</h2>
+                </div>
+                <div id="direction" class="wind-row">
+                    <h2 class="information">Direction</h2>
+                </div>
+            </div>
+            <div class="container" id="visibility">
+                <h1 class="container-label">Visibility</h1>
+            </div>
+            <div class="container" id="feels-like">
+                <h1 class="container-label">Feels like</h1>
+            </div>
+            <div class="container" id="humidity">
+                <h1 class="container-label">Humidity</h1>
+            </div>
+            <div class="container" id="pressure">
+                <h1 class="container-label">Pressure</h1>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>

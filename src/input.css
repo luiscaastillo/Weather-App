@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import "tailwindcss" source(none);
+@source "./src";
+
+@layer components {
+    html{
+        @apply font-sans
+    }
+    body{
+        @apply m-0 p-0 bg-linear-to-b from-blue-400 to-orange-300
+    }
+    .search-bar{
+        @apply flex m-5 text-lg justify-center gap-3
+    }
+    .input{
+        @apply bg-gray-300 flex shadow-lg rounded-lg px-4 font-bold
+    }
+    .submit-button{
+        @apply bg-orange-300 flex shadow-lg rounded-lg px-2 font-bold
+        hover:bg-orange-400 active:bg-orange-500
+    }
+    .main-view{
+        @apply hidden
+    }
+    .details{
+        @apply flex flex-col items-center justify-center m-4 text-white
+    }
+    .second-info{
+        @apply text-2xl font-bold
+    }
+    .first-info{
+        @apply text-4xl
+    }
+    .min-max{
+        @apply flex gap-5
+    }
+    .tags{
+        @apply grid grid-cols-6 m-6 gap-2 text-white
+        max-sm:grid-cols-2
+    }
+    .container{
+        @apply flex flex-col bg-blue-400 rounded-lg justify-baseline p-2 shadow-md min-h-[100px]
+    }
+    .container-label{
+        @apply relative text-white/50 top-0 font-bold
+    }
+    .information{
+        @apply text-white font-bold
+    }
+    .wind-row{
+        @apply flex justify-between
+    }
+    .errorDisplay{
+        @apply text-2xl flex flex-col items-center justify-center m-4 text-white
+    }
+}
